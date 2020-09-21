@@ -346,7 +346,7 @@ var render = function() {
               "text-5xl text-white font-weight-black text-center pt-2 capitalize",
             on: {
               click: function($event) {
-                _vm.clicked(!_vm.status)
+                return _vm.clicked(!_vm.status)
               }
             }
           },
@@ -356,7 +356,14 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "px-3" }, [
         _c("h3", { staticClass: "text-white text-80 font-bold " }, [
-          _vm._v(_vm._s(_vm.message))
+          _vm._v(_vm._s(_vm.message) + ". "),
+          _c(
+            "a",
+            {
+              attrs: { href: "/admin/resources/documents/lens/document-issues" }
+            },
+            [_vm._v("Click Here.")]
+          )
         ])
       ])
     ])

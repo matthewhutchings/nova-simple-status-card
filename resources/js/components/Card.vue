@@ -12,7 +12,7 @@
                 </p>
             </div>
             <div class="px-3">
-                <h3 class="text-white text-80 font-bold " >{{message}}</h3>
+                <h3 class="text-white text-80 font-bold " >{{message}}. <a href="/admin/resources/documents/lens/document-issues">Click Here.</a> </h3>
             </div>
         </div>
 

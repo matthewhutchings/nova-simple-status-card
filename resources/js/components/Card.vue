@@ -12,7 +12,14 @@
                 </p>
             </div>
             <div class="px-3">
-                <h3 class="text-white text-80 font-bold " >{{message}}. <a href="/admin/resources/documents/lens/document-issues">Click Here.</a> </h3>
+                <h3 class="text-white text-80 font-bold " >{{message}}.
+
+                    <div v-if="link">
+                        <a :href="link">Click Here.</a>
+
+                    </div>
+
+                    </h3>
             </div>
         </div>
 
@@ -27,6 +34,7 @@
             return {
                 bgStatus: '',
                 status: '',
+                link: '',
                 message: '',
                 bgClassStatus: {
                     pass: 'bg-success',
@@ -76,6 +84,7 @@
                 {
                     this.bgStatus = this.bgClassStatus[response.data.status]
                     this.status = response.data.status
+                    this.link= response.data.link
                     this.message = response.data.message
                 }
 

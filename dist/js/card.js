@@ -263,13 +263,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['card'],
@@ -364,10 +357,10 @@ var render = function() {
       ]),
       _vm._v(" "),
       _c("div", { staticClass: "px-3" }, [
-        _c("h3", { staticClass: "text-white text-80 font-bold " }, [
-          _vm._v(_vm._s(_vm.message) + ".\n\n                "),
+        _c("h3", { staticClass: "text-white text-80 font-bold" }, [
+          _vm._v(_vm._s(_vm.message) + "."),
           _vm.link
-            ? _c("div", [
+            ? _c("span", [
                 _c("a", { attrs: { href: _vm.link } }, [_vm._v("Click Here.")])
               ])
             : _vm._e()

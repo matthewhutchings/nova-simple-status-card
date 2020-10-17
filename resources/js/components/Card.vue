@@ -12,14 +12,7 @@
                 </p>
             </div>
             <div class="px-3">
-                <h3 class="text-white text-80 font-bold " >{{message}}.
-
-                    <div v-if="link">
-                        <a :href="link">Click Here.</a>
-
-                    </div>
-
-                    </h3>
+                <h3 class="text-white text-80 font-bold">{{message}}.<span v-if="link"><a :href="link">Click Here.</a></span></h3>
             </div>
         </div>
 
